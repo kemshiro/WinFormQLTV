@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WinFormQLTV
+namespace WinFormQLTV.Presentation_Layer
 {
-    public partial class frmLogin : Form
+    public partial class frmMain : Form
     {
-        public frmLogin()
+        public frmMain()
         {
             InitializeComponent();
         }
