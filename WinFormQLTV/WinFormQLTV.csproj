@@ -64,6 +64,10 @@
     <Compile Include="Bussiness_Logic_Layer\BLL_NguoiDung.cs" />
     <Compile Include="Data_Access_Layer\DAL_KetNoiDB.cs" />
     <Compile Include="Data_Access_Layer\DAL_Sql_User.cs" />
+    <Compile Include="Entities\CuonSach.cs" />
+    <Compile Include="Entities\DauSach.cs" />
+    <Compile Include="Entities\DocGia.cs" />
+    <Compile Include="Entities\TuaSach.cs" />
     <Compile Include="Presentation_Layer\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +85,12 @@
     </Compile>
     <Compile Include="Presentation_Layer\frmRegister.Designer.cs">
       <DependentUpon>frmRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation_Layer\frmPersonalDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation_Layer\frmPersonalDetails.Designer.cs">
+      <DependentUpon>frmPersonalDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

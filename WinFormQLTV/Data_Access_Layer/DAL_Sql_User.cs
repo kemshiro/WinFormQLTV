@@ -15,9 +15,19 @@ namespace WinFormQLTV.Data_Access_Layer
             return (int)kn.GetValue(@"select count(*) from DangKyDocGia where username = '" + username + "' and password = '" + password + "'");
         }
 
-        public int getMaDocGia(string username, string password)
+        public int getMaxMaDocGia()
         {
-            return (int)kn.GetValue(@"select docGiaMa from DangKyDocGia where username = '" + username + "' and password = '" + password + "'");
+            return (int)kn.GetValue("select MAX(docGiaMa) from DangKyDocGia");
+        }
+
+        public string getTenDocGia(string username, string password)
+        {
+            return (string)kn.GetValue(@"select dg.hoTen from DocGia dg inner join DangKyDocGia dkdg on dg.maDocGia = dkdg.docGiaMa where dkdg.username = '" + username + "' and dkdg.password = '" + password + "'");
+        }
+
+        public int checkRegister(string username)
+        {
+            return (int)kn.GetValue(@"select count(*) from DangKyDocGia where username = '" + username + "'");
         }
     }
 }

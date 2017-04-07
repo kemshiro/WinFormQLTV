@@ -14,11 +14,16 @@ namespace WinFormQLTV
 {
     public partial class frmLogin : Form
     {
-        BLL_NguoiDung user = new BLL_NguoiDung();
-        frmMain frmMain;
-        frmRegister frmRegister;
+        private BLL_NguoiDung user;
+        private frmMain frmMain;
+        private frmRegister frmRegister;
+        private frmPersonalDetails frmPersonalDetails;
+
+
+
         public frmLogin()
         {
+            user = new BLL_NguoiDung();
             InitializeComponent();
         }
 
@@ -26,10 +31,19 @@ namespace WinFormQLTV
         {
             if (user.checkLogin(tbUsername.Text, tbPassword.Text) == 1)
             {
-                this.Visible = false;
-                frmMain main = new frmMain();
-                main.ShowDialog();
-                this.Visible = false;
+                if(user.getTenDocGia(tbUsername.Text, tbPassword.Text) != null)
+                {
+                    frmMain main = new frmMain();
+                    main.ShowDialog();
+                    this.Visible = false;
+                }
+                else
+                {
+                    frmPersonalDetails = new frmPersonalDetails();
+                    frmPersonalDetails.ShowDialog();
+                    this.Visible = false;
+                }
+               
             }
 
         }
