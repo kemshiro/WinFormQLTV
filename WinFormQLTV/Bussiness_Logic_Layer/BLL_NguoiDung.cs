@@ -30,5 +30,10 @@ namespace WinFormQLTV.Bussiness_Logic_Layer
         {
             return user.checkRegister(username);
         }
+
+        public int getMaDocGia(string username, string pass)
+        {
+            return user.getMaDocGia(username, pass);
+        }
     }
 }

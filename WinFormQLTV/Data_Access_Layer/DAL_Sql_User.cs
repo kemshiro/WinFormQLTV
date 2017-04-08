@@ -29,5 +29,10 @@ namespace WinFormQLTV.Data_Access_Layer
         {
             return (int)kn.GetValue(@"select count(*) from DangKyDocGia where username = '" + username + "'");
         }
+
+        public int getMaDocGia(string username, string password)
+        {
+            return (int)kn.GetValue(@"select docGiaMa from DangKyDocGia where username = '" + username + "' and password = '" + password + "'");
+        }
     }
 }

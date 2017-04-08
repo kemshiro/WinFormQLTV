@@ -39,11 +39,15 @@ namespace WinFormQLTV
                 }
                 else
                 {
-                    frmPersonalDetails = new frmPersonalDetails();
+                    frmPersonalDetails = new frmPersonalDetails(user.getMaDocGia(tbUsername.Text, tbPassword.Text));
                     frmPersonalDetails.ShowDialog();
                     this.Visible = false;
                 }
-               
+
+            }
+            else
+            {
+                MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu!", "Thông báo");
             }
 
         }
