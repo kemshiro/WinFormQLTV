@@ -15,10 +15,10 @@ namespace WinFormQLTV
     public partial class frmLogin : Form
     {
         private BLL_NguoiDung user;
-        private frmMain frmMain;
+        private frmMainUser frmMainUser;
         private frmRegister frmRegister;
         private frmPersonalDetails frmPersonalDetails;
-
+        private frmMainAdmin frmMainAdmin;
 
 
         public frmLogin()
@@ -29,11 +29,18 @@ namespace WinFormQLTV
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            if(tbUsername.Text =="linh" && tbPassword.Text == "123")
+            {
+                frmMainAdmin = new frmMainAdmin();
+                frmMainAdmin.ShowDialog();
+                this.Visible = false;
+            }
+
             if (user.checkLogin(tbUsername.Text, tbPassword.Text) == 1)
             {
                 if(user.getTenDocGia(tbUsername.Text, tbPassword.Text) != null)
                 {
-                    frmMain main = new frmMain();
+                    frmMainUser main = new frmMainUser();
                     main.ShowDialog();
                     this.Visible = false;
                 }

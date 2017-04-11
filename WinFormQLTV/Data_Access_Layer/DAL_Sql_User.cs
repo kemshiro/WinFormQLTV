@@ -17,7 +17,7 @@ namespace WinFormQLTV.Data_Access_Layer
 
         public int getMaxMaDocGia()
         {
-            return (int)kn.GetValue("select MAX(docGiaMa) from DangKyDocGia");
+            return (int)kn.GetValue(@"select MAX(docGiaMa) from DangKyDocGia");
         }
 
         public string getTenDocGia(string username, string password)

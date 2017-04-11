@@ -19,7 +19,7 @@ namespace WinFormQLTV.Presentation_Layer
         private BLL_NguoiDung user;
         private DAL_KetNoiDB kn;
         private List<SqlParameter> listParams;
-        private frmMain frmMain;
+        private frmMainUser frmMain;
 
         public frmPersonalDetails(int maDocGia)
         {
@@ -87,11 +87,11 @@ namespace WinFormQLTV.Presentation_Layer
                 else
                 {
                     MessageBox.Show("Bạn đã hoàn tất đăng kí, bắt đầu sử dụng!", "Thông báo");
-                    frmMain = new frmMain();
+                    frmMain = new frmMainUser();
                     frmMain.Show();
                     this.Close();
                 }
-            }a
+            }
         }
     }
 }

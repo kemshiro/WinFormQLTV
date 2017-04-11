@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WinFormQLTV.Presentation_Layer
 {
-    public partial class frmMain : Form
+    public partial class frmMainUser : Form
     {
-        public frmMain()
+        public frmMainUser()
         {
             InitializeComponent();
         }

@@ -61,24 +61,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bussiness_Logic_Layer\BLL_Book.cs" />
     <Compile Include="Bussiness_Logic_Layer\BLL_NguoiDung.cs" />
     <Compile Include="Data_Access_Layer\DAL_KetNoiDB.cs" />
+    <Compile Include="Data_Access_Layer\DAL_Sql_Book.cs" />
     <Compile Include="Data_Access_Layer\DAL_Sql_User.cs" />
-    <Compile Include="Entities\CuonSach.cs" />
-    <Compile Include="Entities\DauSach.cs" />
     <Compile Include="Entities\DocGia.cs" />
-    <Compile Include="Entities\TuaSach.cs" />
     <Compile Include="Presentation_Layer\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentation_Layer\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentation_Layer\frmMain.cs">
+    <Compile Include="Presentation_Layer\frmMainAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation_Layer\frmMain.Designer.cs">
-      <DependentUpon>frmMain.cs</DependentUpon>
+    <Compile Include="Presentation_Layer\frmMainAdmin.Designer.cs">
+      <DependentUpon>frmMainAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation_Layer\frmMainUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation_Layer\frmMainUser.Designer.cs">
+      <DependentUpon>frmMainUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation_Layer\frmRegister.cs">
       <SubType>Form</SubType>
@@ -92,19 +97,40 @@
     <Compile Include="Presentation_Layer\frmPersonalDetails.Designer.cs">
       <DependentUpon>frmPersonalDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation_Layer\frmQuanLySach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation_Layer\frmQuanLySach.Designer.cs">
+      <DependentUpon>frmQuanLySach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation_Layer\frmThemSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation_Layer\frmThemSach.Designer.cs">
+      <DependentUpon>frmThemSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Presentation_Layer\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation_Layer\frmMain.resx">
-      <DependentUpon>frmMain.cs</DependentUpon>
+    <EmbeddedResource Include="Presentation_Layer\frmMainAdmin.resx">
+      <DependentUpon>frmMainAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation_Layer\frmMainUser.resx">
+      <DependentUpon>frmMainUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation_Layer\frmPersonalDetails.resx">
       <DependentUpon>frmPersonalDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation_Layer\frmRegister.resx">
       <DependentUpon>frmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation_Layer\frmQuanLySach.resx">
+      <DependentUpon>frmQuanLySach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation_Layer\frmThemSach.resx">
+      <DependentUpon>frmThemSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
