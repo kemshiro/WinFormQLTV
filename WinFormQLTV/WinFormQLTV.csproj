@@ -12,6 +12,7 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -67,6 +67,18 @@
     <Compile Include="Data_Access_Layer\DAL_Sql_Book.cs" />
     <Compile Include="Data_Access_Layer\DAL_Sql_User.cs" />
     <Compile Include="Entities\DocGia.cs" />
+    <Compile Include="Presentation_Layer\frmChiTietDauSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation_Layer\frmChiTietDauSach.Designer.cs">
+      <DependentUpon>frmChiTietDauSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation_Layer\frmEditDauSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation_Layer\frmEditDauSach.Designer.cs">
+      <DependentUpon>frmEditDauSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation_Layer\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,14 +115,26 @@
     <Compile Include="Presentation_Layer\frmQuanLySach.Designer.cs">
       <DependentUpon>frmQuanLySach.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentation_Layer\frmThemSach.cs">
+    <Compile Include="Presentation_Layer\frmThemCuonSach.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation_Layer\frmThemSach.Designer.cs">
-      <DependentUpon>frmThemSach.cs</DependentUpon>
+    <Compile Include="Presentation_Layer\frmThemCuonSach.Designer.cs">
+      <DependentUpon>frmThemCuonSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation_Layer\frmThemDauSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation_Layer\frmThemDauSach.Designer.cs">
+      <DependentUpon>frmThemDauSach.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Presentation_Layer\frmChiTietDauSach.resx">
+      <DependentUpon>frmChiTietDauSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation_Layer\frmEditDauSach.resx">
+      <DependentUpon>frmEditDauSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation_Layer\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,8 +153,11 @@
     <EmbeddedResource Include="Presentation_Layer\frmQuanLySach.resx">
       <DependentUpon>frmQuanLySach.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation_Layer\frmThemSach.resx">
-      <DependentUpon>frmThemSach.cs</DependentUpon>
+    <EmbeddedResource Include="Presentation_Layer\frmThemCuonSach.resx">
+      <DependentUpon>frmThemCuonSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation_Layer\frmThemDauSach.resx">
+      <DependentUpon>frmThemDauSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

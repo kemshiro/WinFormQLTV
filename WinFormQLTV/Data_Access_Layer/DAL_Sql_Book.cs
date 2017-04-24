@@ -25,5 +25,15 @@ namespace WinFormQLTV.Data_Access_Layer
         {
             return (int)kn.GetValue(@"select dauSachMa from CuonSach where CuonSach.maCuonSach = " + maCuonSach);
         }
+
+        public string getNoiDung(string maDauSach)
+        {
+            return (string)kn.GetValue(@"select tomTatNoiDung from DauSach where DauSach.maDauSach = " + maDauSach);
+        }
+
+        public int getSoLuong(string maDauSach)
+        {
+            return (int)kn.GetValue(@"select soLuong from DauSach where DauSach.maDauSach = " + maDauSach);
+        }
     }
 }

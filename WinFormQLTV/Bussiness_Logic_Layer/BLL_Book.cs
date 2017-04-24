@@ -25,5 +25,15 @@ namespace WinFormQLTV.Bussiness_Logic_Layer
         {
             return book.getMaDauSach(maCuonSach);
         }
+
+        public string getNoiDung(string maDauSach)
+        {
+            return book.getNoiDung(maDauSach);
+        }
+
+        public int getSoLuong(string maDauSach)
+        {
+            return book.getSoLuong(maDauSach);
+        }
     }
 }

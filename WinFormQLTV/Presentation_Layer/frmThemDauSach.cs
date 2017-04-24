@@ -13,40 +13,27 @@ using WinFormQLTV.Data_Access_Layer;
 
 namespace WinFormQLTV.Presentation_Layer
 {
-    public partial class frmThemSach : Form
+    public partial class frmThemDauSach : Form
     {
-        public Boolean isRowSelected { get; set; }
-        public string maDauSachKhoiTao { get; set; }
         private BLL_Book book;
         private List<SqlParameter> listParams;
         private DAL_KetNoiDB kn;
+        private int maDauSachMoi;
+        private int maCuonSachMoi;
 
-        public frmThemSach(Boolean isRowSelected)
+        public frmThemDauSach()
         {
             kn = new DAL_KetNoiDB();
             book = new BLL_Book();
-            this.isRowSelected = isRowSelected;
+            maDauSachMoi = book.getMaxMaDauSach() + 1;
+            maCuonSachMoi = book.getMaxMaCuonSach() + 1;
             InitializeComponent();
             initForms();
         }
 
         private void initForms()
         {
-            if (isRowSelected == false)
-            {
-                int maDauSachMoi = book.getMaxMaDauSach() + 1;
-                int maCuonSachMoi = book.getMaxMaCuonSach() + 1;
-
-                tbMaDauSach1.Text = ""+maDauSachMoi;
-                tbMaDauSach2.Text = tbMaDauSach1.Text;
-                tbMaCuonSach.Text = ""+maCuonSachMoi;
-            }
-            else
-            {
-                tbMaDauSach1.Text = maDauSachKhoiTao;
-                tbMaDauSach2.Text = tbMaDauSach1.Text;
-                tbMaCuonSach.Text = (book.getMaxMaCuonSach() + 1).ToString();
-            }
+            tbMaDauSach1.Text = maDauSachMoi.ToString();
         }
 
         private void btnHoanTat_Click(object sender, EventArgs e)
@@ -57,6 +44,7 @@ namespace WinFormQLTV.Presentation_Layer
             string tacGia = tbTacGia.Text;
             string theLoai = tbTheLoai.Text;
             string tomTatND = rtbTomTatNoiDung.Text;
+            string maCuonSach = maCuonSachMoi.ToString();
 
             listParams = new List<SqlParameter>();
             int ret = 0;
@@ -88,6 +76,10 @@ namespace WinFormQLTV.Presentation_Layer
             param.Value = tomTatND;
             listParams.Add(param);
 
+            param = new SqlParameter("@maCuonSach", SqlDbType.Int);
+            param.Value = maCuonSach;
+            listParams.Add(param);
+
             DialogResult result = MessageBox.Show("Bạn chắc chắn?", "Thông Báo",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
@@ -102,51 +94,13 @@ namespace WinFormQLTV.Presentation_Layer
                 else
                 {
                     MessageBox.Show("Thêm đầu sách thành công!", "Thông báo");
-                    this.Close();
                 }
             }
             else
             {
                 this.Close();
             }
-        }
-
-        private void btnThemCuonSach_Click(object sender, EventArgs e)
-        {
-            string maDauSach = tbMaDauSach2.Text;
-            listParams = new List<SqlParameter>();
-            int ret = 0;
-
-
-            SqlParameter param;
-
-            param = new SqlParameter("@maDauSach", SqlDbType.Int);
-            param.Value = maDauSach;
-            listParams.Add(param);
-
-            string sqlCommand = "insert into CuonSach (dauSachMa) values(" + maDauSach + ")";
-
-            DialogResult result = MessageBox.Show("Bạn chắc chắn?", "Thông Báo",
-               MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (result == DialogResult.Yes)
-            {
-                ret = kn.doSQL(sqlCommand, listParams.ToArray());
-                kn.Close();
-                if (ret < 0)
-                {
-                    MessageBox.Show("Lỗi ghi dữ liệu", "Thông báo");
-                }
-                else
-                {
-                    MessageBox.Show("Thêm cuốn thành công!", "Thông báo");
-                    this.Close();
-                }
-            }
-            else
-            {
-                this.Close();
-            }
+            this.Dispose();
         }
     }
 }
