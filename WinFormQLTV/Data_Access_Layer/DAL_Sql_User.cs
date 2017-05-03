@@ -34,5 +34,40 @@ namespace WinFormQLTV.Data_Access_Layer
         {
             return (int)kn.GetValue(@"select docGiaMa from DangKyDocGia where username = '" + username + "' and password = '" + password + "'");
         }
+
+        public string getTenDocGia(string maDocGia)
+        {
+            return (string)kn.GetValue(@"select dg.hoTen from DocGia dg inner join DangKyDocGia dkdg on dg.maDocGia = dkdg.docGiaMa where dkdg.docGiaMa = "+maDocGia);
+        }
+
+        public string getTen(string maDocGia)
+        {
+            return (string)kn.GetValue(@"select dg.hoTen from DocGia dg inner join DangKyDocGia dkdg on dg.maDocGia = dkdg.docGiaMa where dkdg.docGiaMa = " + maDocGia);
+        }
+
+        public DateTime getNgaySinh(string maDocGia)
+        {
+            return (DateTime)kn.GetValue(@"select dg.ngaySinh from DocGia dg inner join DangKyDocGia dkdg on dg.maDocGia = dkdg.docGiaMa where dkdg.docGiaMa = " + maDocGia);
+        }
+
+        public string getGioiTinh(string maDocGia)
+        {
+            return (string)kn.GetValue(@"select dg.gioiTinh from DocGia dg inner join DangKyDocGia dkdg on dg.maDocGia = dkdg.docGiaMa where dkdg.docGiaMa = " + maDocGia);
+        }
+
+        public string getLophoc(string maDocGia)
+        {
+            return (string)kn.GetValue(@"select DocGia.lopHoc from DocGia inner join DangKyDocGia on DocGia.maDocGia = DangKyDocGia.docGiaMa where DangKyDocGia.docGiaMa = " + maDocGia);
+        }
+
+        public int getSoCMND(string maDocGia)
+        {
+            return (int)kn.GetValue(@"select dg.soCMND from DocGia dg inner join DangKyDocGia dkdg on dg.maDocGia = dkdg.docGiaMa where dkdg.docGiaMa = " + maDocGia);
+        }
+
+        public int getMaDocGia(string username)
+        {
+            return (int)kn.GetValue(@"select docGiaMa from DangKyDocGia where username = '" + username+"'");
+        }
     }
 }

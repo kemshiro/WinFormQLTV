@@ -21,6 +21,11 @@ namespace WinFormQLTV.Bussiness_Logic_Layer
             return user.getMaxMaDocGia();
         }
 
+        public int getMaDocGia(string username)
+        {
+            return user.getMaDocGia(username);
+        }
+
         public string getTenDocGia(string username, string password)
         {
             return user.getTenDocGia(username, password);
@@ -34,6 +39,31 @@ namespace WinFormQLTV.Bussiness_Logic_Layer
         public int getMaDocGia(string username, string pass)
         {
             return user.getMaDocGia(username, pass);
+        }
+
+        public string getTen(string maDocGia)
+        {
+            return user.getTen(maDocGia);
+        }
+
+        public string getLopHoc(string maDocGia)
+        {
+            return user.getLophoc(maDocGia);
+        }
+
+        public string getGioiTinh(string maDocGia)
+        {
+            return user.getGioiTinh(maDocGia);
+        }
+
+        public int getSoCMND(string maDocGia)
+        {
+            return user.getSoCMND(maDocGia);
+        }
+
+        public DateTime getNgaySinh(string maDocGia)
+        {
+            return user.getNgaySinh(maDocGia);
         }
     }
 }

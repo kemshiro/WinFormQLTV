@@ -12,6 +12,14 @@ namespace WinFormQLTV.Presentation_Layer
 {
     public partial class frmMainUser : Form
     {
+        private string username;
+
+        public frmMainUser(string username)
+        {
+            this.username = username;
+            InitializeComponent();
+        }
+
         public frmMainUser()
         {
             InitializeComponent();

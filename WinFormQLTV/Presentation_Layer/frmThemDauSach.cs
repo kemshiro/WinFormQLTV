@@ -36,6 +36,11 @@ namespace WinFormQLTV.Presentation_Layer
             tbMaDauSach1.Text = maDauSachMoi.ToString();
         }
 
+        private void rtbTomTatNoiDung_Click(object sender, EventArgs e)
+        {
+            rtbTomTatNoiDung.Text = "";
+        }
+
         private void btnHoanTat_Click(object sender, EventArgs e)
         {
             string maDauSach = tbMaDauSach1.Text;
@@ -102,5 +107,6 @@ namespace WinFormQLTV.Presentation_Layer
             }
             this.Dispose();
         }
+
     }
 }

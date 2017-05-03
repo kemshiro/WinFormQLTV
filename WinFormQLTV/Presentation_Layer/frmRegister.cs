@@ -54,7 +54,7 @@ namespace WinFormQLTV.Presentation_Layer
                 {
                     string username = tbUsername.Text;
                     string password = tbPassword.Text;
-                    int maDocGia = user.getMaxMaDocGia() + 1000;
+                    int maDocGia = user.getMaxMaDocGia() + 1;
 
                     int ret = 0;
 

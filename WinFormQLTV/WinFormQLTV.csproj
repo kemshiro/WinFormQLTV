@@ -97,6 +97,12 @@
     <Compile Include="Presentation_Layer\frmMainUser.Designer.cs">
       <DependentUpon>frmMainUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation_Layer\frmQuanLyNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation_Layer\frmQuanLyNguoiDung.Designer.cs">
+      <DependentUpon>frmQuanLyNguoiDung.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation_Layer\frmRegister.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation_Layer\frmPersonalDetails.resx">
       <DependentUpon>frmPersonalDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation_Layer\frmQuanLyNguoiDung.resx">
+      <DependentUpon>frmQuanLyNguoiDung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation_Layer\frmRegister.resx">
       <DependentUpon>frmRegister.cs</DependentUpon>

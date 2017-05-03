@@ -40,15 +40,14 @@ namespace WinFormQLTV
             {
                 if(user.getTenDocGia(tbUsername.Text, tbPassword.Text) != null)
                 {
-                    frmMainUser main = new frmMainUser();
-                    main.ShowDialog();
-                    this.Visible = false;
+                    string username = tbUsername.Text;
+                    frmMainUser = new frmMainUser(username);
+                    frmMainUser.ShowDialog();
                 }
                 else
                 {
                     frmPersonalDetails = new frmPersonalDetails(user.getMaDocGia(tbUsername.Text, tbPassword.Text));
                     frmPersonalDetails.ShowDialog();
-                    this.Visible = false;
                 }
 
             }

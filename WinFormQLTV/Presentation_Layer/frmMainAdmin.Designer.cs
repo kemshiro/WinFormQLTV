@@ -51,6 +51,7 @@
             this.btnQuanLyUser.TabIndex = 4;
             this.btnQuanLyUser.Text = "Quản Lý Thông Tin Người Dùng";
             this.btnQuanLyUser.UseVisualStyleBackColor = true;
+            this.btnQuanLyUser.Click += new System.EventHandler(this.btnQuanLyUser_Click);
             // 
             // btnThoat
             // 
@@ -60,6 +61,7 @@
             this.btnThoat.TabIndex = 5;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // frmMainAdmin
             // 
@@ -70,7 +72,7 @@
             this.Controls.Add(this.btnQuanLyUser);
             this.Controls.Add(this.btnQuanLySach);
             this.Name = "frmMainAdmin";
-            this.Text = "frmMainAdmin";
+            this.Text = "Trung Tâm Quản Lý";
             this.ResumeLayout(false);
 
         }

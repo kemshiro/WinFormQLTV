@@ -103,6 +103,7 @@
             this.rtbTomTatNoiDung.Size = new System.Drawing.Size(340, 130);
             this.rtbTomTatNoiDung.TabIndex = 5;
             this.rtbTomTatNoiDung.Text = "Tóm tắt nội dung chính....";
+            this.rtbTomTatNoiDung.Click += new System.EventHandler(this.rtbTomTatNoiDung_Click);
             // 
             // tbTieuDe
             // 

@@ -13,6 +13,7 @@ namespace WinFormQLTV.Presentation_Layer
     public partial class frmMainAdmin : Form
     {
         private frmQuanLySach frmQuanLySach;
+        private frmQuanLyNguoiDung frmQuanLyNguoiDung;
         public frmMainAdmin()
         {
             InitializeComponent();
@@ -22,6 +23,17 @@ namespace WinFormQLTV.Presentation_Layer
         {
             frmQuanLySach = new frmQuanLySach();
             frmQuanLySach.ShowDialog();
+        }
+
+        private void btnQuanLyUser_Click(object sender, EventArgs e)
+        {
+            frmQuanLyNguoiDung = new frmQuanLyNguoiDung();
+            frmQuanLyNguoiDung.ShowDialog();
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -28,23 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnThongTin = new System.Windows.Forms.Button();
             this.btnLichSu = new System.Windows.Forms.Button();
             this.btnMuonSach = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnThongTin
-            // 
-            this.btnThongTin.Location = new System.Drawing.Point(83, 136);
-            this.btnThongTin.Name = "btnThongTin";
-            this.btnThongTin.Size = new System.Drawing.Size(134, 99);
-            this.btnThongTin.TabIndex = 0;
-            this.btnThongTin.Text = "Thông tin cá nhân";
-            this.btnThongTin.UseVisualStyleBackColor = true;
-            // 
             // btnLichSu
             // 
-            this.btnLichSu.Location = new System.Drawing.Point(255, 136);
+            this.btnLichSu.Location = new System.Drawing.Point(107, 136);
             this.btnLichSu.Name = "btnLichSu";
             this.btnLichSu.Size = new System.Drawing.Size(136, 99);
             this.btnLichSu.TabIndex = 1;
@@ -53,7 +43,7 @@
             // 
             // btnMuonSach
             // 
-            this.btnMuonSach.Location = new System.Drawing.Point(439, 136);
+            this.btnMuonSach.Location = new System.Drawing.Point(374, 136);
             this.btnMuonSach.Name = "btnMuonSach";
             this.btnMuonSach.Size = new System.Drawing.Size(128, 99);
             this.btnMuonSach.TabIndex = 2;
@@ -67,7 +57,6 @@
             this.ClientSize = new System.Drawing.Size(644, 402);
             this.Controls.Add(this.btnMuonSach);
             this.Controls.Add(this.btnLichSu);
-            this.Controls.Add(this.btnThongTin);
             this.Name = "frmMainUser";
             this.Text = "Quản Lý Thư Viện";
             this.ResumeLayout(false);
@@ -75,8 +64,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnThongTin;
         private System.Windows.Forms.Button btnLichSu;
         private System.Windows.Forms.Button btnMuonSach;
     }

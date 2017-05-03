@@ -20,6 +20,12 @@ namespace WinFormQLTV.Presentation_Layer
         private DAL_KetNoiDB kn;
         private List<SqlParameter> listParams;
         private frmMainUser frmMain;
+        private string username;
+
+        public frmPersonalDetails()
+        {
+            InitializeComponent();
+        }
 
         public frmPersonalDetails(int maDocGia)
         {
@@ -37,8 +43,6 @@ namespace WinFormQLTV.Presentation_Layer
                 MessageBox.Show("Phải điền đầy đủ thông tin", "Thông báo");
                 return;
             }
-
-            DataSet ds = new DataSet();
 
             string gioiTinh = tbGioiTinh.Text;
             string hoTen = tbHoTen.Text;
