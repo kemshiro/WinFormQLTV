@@ -64,5 +64,6 @@ namespace WinFormQLTV
             frmRegister = new frmRegister();
             frmRegister.ShowDialog();
         }
+
     }
 }
