@@ -21,6 +21,11 @@ namespace WinFormQLTV.Bussiness_Logic_Layer
             return book.getMaxMaCuonSach();
         }
 
+        public int getMaxMaCuonSach(string dauSachMa)
+        {
+            return book.getMaxMaCuonSach(dauSachMa);
+        }
+
         public int getMaDauSach(int maCuonSach)
         {
             return book.getMaDauSach(maCuonSach);
@@ -34,6 +39,11 @@ namespace WinFormQLTV.Bussiness_Logic_Layer
         public int getSoLuong(string maDauSach)
         {
             return book.getSoLuong(maDauSach);
+        }
+
+        public string getISBN(string dauSachMa, string cuonSachMa)
+        {
+            return book.getISBN(dauSachMa, cuonSachMa);
         }
     }
 }

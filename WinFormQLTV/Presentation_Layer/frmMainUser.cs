@@ -13,6 +13,7 @@ namespace WinFormQLTV.Presentation_Layer
     public partial class frmMainUser : Form
     {
         private string username;
+        private frmMuonSach frmMuonSach;
 
         public frmMainUser(string username)
         {
@@ -23,6 +24,12 @@ namespace WinFormQLTV.Presentation_Layer
         public frmMainUser()
         {
             InitializeComponent();
+        }
+
+        private void btnMuonSach_Click(object sender, EventArgs e)
+        {
+            frmMuonSach = new frmMuonSach(username);
+            frmMuonSach.ShowDialog();
         }
     }
 }

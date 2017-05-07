@@ -97,5 +97,11 @@ namespace WinFormQLTV.Presentation_Layer
                 }
             }
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            this.Close();
+        }
     }
 }

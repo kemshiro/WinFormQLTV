@@ -27,6 +27,12 @@ namespace WinFormQLTV.Presentation_Layer
             InitializeComponent();
         }
 
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            this.Close();
+        }
+
         private void showData(string sqlCommand)
         {
             kn.Open();

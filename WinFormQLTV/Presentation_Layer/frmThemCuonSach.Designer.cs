@@ -36,6 +36,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tbMaCuonSach = new System.Windows.Forms.TextBox();
             this.btnThemCuonSach = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tbISBN = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // tbDauSachMa
@@ -110,7 +112,7 @@
             // 
             this.btnThemCuonSach.BackColor = System.Drawing.Color.Maroon;
             this.btnThemCuonSach.ForeColor = System.Drawing.Color.Gold;
-            this.btnThemCuonSach.Location = new System.Drawing.Point(121, 212);
+            this.btnThemCuonSach.Location = new System.Drawing.Point(117, 249);
             this.btnThemCuonSach.Name = "btnThemCuonSach";
             this.btnThemCuonSach.Size = new System.Drawing.Size(108, 37);
             this.btnThemCuonSach.TabIndex = 7;
@@ -118,12 +120,32 @@
             this.btnThemCuonSach.UseVisualStyleBackColor = false;
             this.btnThemCuonSach.Click += new System.EventHandler(this.btnThemCuonSach_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label5.ForeColor = System.Drawing.Color.Purple;
+            this.label5.Location = new System.Drawing.Point(29, 203);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(39, 16);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "ISBN";
+            // 
+            // tbISBN
+            // 
+            this.tbISBN.Location = new System.Drawing.Point(157, 199);
+            this.tbISBN.Name = "tbISBN";
+            this.tbISBN.Size = new System.Drawing.Size(100, 20);
+            this.tbISBN.TabIndex = 9;
+            // 
             // frmThemCuonSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PapayaWhip;
-            this.ClientSize = new System.Drawing.Size(362, 261);
+            this.ClientSize = new System.Drawing.Size(362, 298);
+            this.Controls.Add(this.tbISBN);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.btnThemCuonSach);
             this.Controls.Add(this.tbMaCuonSach);
             this.Controls.Add(this.label4);
@@ -149,5 +171,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tbMaCuonSach;
         private System.Windows.Forms.Button btnThemCuonSach;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox tbISBN;
     }
 }

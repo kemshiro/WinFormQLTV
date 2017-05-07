@@ -49,6 +49,7 @@
             this.btnMuonSach.TabIndex = 2;
             this.btnMuonSach.Text = "Mượn sách";
             this.btnMuonSach.UseVisualStyleBackColor = true;
+            this.btnMuonSach.Click += new System.EventHandler(this.btnMuonSach_Click);
             // 
             // frmMainUser
             // 

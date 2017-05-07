@@ -48,11 +48,16 @@ namespace WinFormQLTV.Presentation_Layer
         {
             string dauSachMa = tbDauSachMa.Text;
             string maCuonSach = tbMaCuonSach.Text;
+            string isbn = tbISBN.Text;
 
             listParams = new List<SqlParameter>();
             int ret = 0;
 
             SqlParameter param;
+
+            param = new SqlParameter("@maISBN", SqlDbType.VarChar);
+            param.Value = isbn;
+            listParams.Add(param);
 
             param = new SqlParameter("@dauSachMa", SqlDbType.Int);
             param.Value = dauSachMa;
@@ -86,5 +91,6 @@ namespace WinFormQLTV.Presentation_Layer
 
             this.Dispose();
         }
+
     }
 }

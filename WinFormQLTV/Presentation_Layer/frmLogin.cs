@@ -35,27 +35,28 @@ namespace WinFormQLTV
                 frmMainAdmin.ShowDialog();
                 this.Visible = false;
             }
-
-            if (user.checkLogin(tbUsername.Text, tbPassword.Text) == 1)
+            else
             {
-                if(user.getTenDocGia(tbUsername.Text, tbPassword.Text) != null)
+                if (user.checkLogin(tbUsername.Text, tbPassword.Text) == 1)
                 {
-                    string username = tbUsername.Text;
-                    frmMainUser = new frmMainUser(username);
-                    frmMainUser.ShowDialog();
+                    if (user.getTenDocGia(tbUsername.Text, tbPassword.Text) != null)
+                    {
+                        string username = tbUsername.Text;
+                        frmMainUser = new frmMainUser(username);
+                        frmMainUser.ShowDialog();
+                    }
+                    else
+                    {
+                        frmPersonalDetails = new frmPersonalDetails(user.getMaDocGia(tbUsername.Text, tbPassword.Text));
+                        frmPersonalDetails.ShowDialog();
+                    }
+
                 }
                 else
                 {
-                    frmPersonalDetails = new frmPersonalDetails(user.getMaDocGia(tbUsername.Text, tbPassword.Text));
-                    frmPersonalDetails.ShowDialog();
+                    MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu!", "Thông báo");
                 }
-
             }
-            else
-            {
-                MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu!", "Thông báo");
-            }
-
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
