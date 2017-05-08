@@ -81,10 +81,6 @@ namespace WinFormQLTV.Presentation_Layer
             param.Value = tomTatND;
             listParams.Add(param);
 
-            param = new SqlParameter("@maCuonSach", SqlDbType.Int);
-            param.Value = maCuonSach;
-            listParams.Add(param);
-
             DialogResult result = MessageBox.Show("Bạn chắc chắn?", "Thông Báo",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 

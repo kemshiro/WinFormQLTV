@@ -30,7 +30,7 @@
         {
             this.btnLichSu = new System.Windows.Forms.Button();
             this.btnMuonSach = new System.Windows.Forms.Button();
-            this.btnTraSach = new System.Windows.Forms.Button();
+            this.btnQuayLai = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnLichSu
@@ -58,18 +58,18 @@
             this.btnMuonSach.UseVisualStyleBackColor = false;
             this.btnMuonSach.Click += new System.EventHandler(this.btnMuonSach_Click);
             // 
-            // btnTraSach
+            // btnQuayLai
             // 
-            this.btnTraSach.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnTraSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnTraSach.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnTraSach.Location = new System.Drawing.Point(460, 136);
-            this.btnTraSach.Name = "btnTraSach";
-            this.btnTraSach.Size = new System.Drawing.Size(128, 99);
-            this.btnTraSach.TabIndex = 3;
-            this.btnTraSach.Text = "Trả Sách";
-            this.btnTraSach.UseVisualStyleBackColor = false;
-            this.btnTraSach.Click += new System.EventHandler(this.btnTraSach_Click);
+            this.btnQuayLai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnQuayLai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnQuayLai.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnQuayLai.Location = new System.Drawing.Point(460, 136);
+            this.btnQuayLai.Name = "btnQuayLai";
+            this.btnQuayLai.Size = new System.Drawing.Size(128, 99);
+            this.btnQuayLai.TabIndex = 3;
+            this.btnQuayLai.Text = "Quay Lại";
+            this.btnQuayLai.UseVisualStyleBackColor = false;
+            this.btnQuayLai.Click += new System.EventHandler(this.btnQuayLai_Click);
             // 
             // frmMainUser
             // 
@@ -77,7 +77,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(644, 402);
-            this.Controls.Add(this.btnTraSach);
+            this.Controls.Add(this.btnQuayLai);
             this.Controls.Add(this.btnMuonSach);
             this.Controls.Add(this.btnLichSu);
             this.Name = "frmMainUser";
@@ -89,6 +89,6 @@
         #endregion
         private System.Windows.Forms.Button btnLichSu;
         private System.Windows.Forms.Button btnMuonSach;
-        private System.Windows.Forms.Button btnTraSach;
+        private System.Windows.Forms.Button btnQuayLai;
     }
 }

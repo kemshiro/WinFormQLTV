@@ -42,9 +42,9 @@ namespace WinFormQLTV.Presentation_Layer
 
 
             dgvUser.Columns[0].HeaderText = "Mã Độc Giả";
-            dgvUser.Columns[0].Width = 40;
+            dgvUser.Columns[0].Width = 70;
             dgvUser.Columns[1].HeaderText = "Tài Khoản";
-            dgvUser.Columns[1].Width = 100;
+            dgvUser.Columns[1].Width = 150;
 
             kn.Close();
         }

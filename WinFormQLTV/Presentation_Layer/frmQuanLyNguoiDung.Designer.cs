@@ -176,7 +176,7 @@
             this.dgvUser.Location = new System.Drawing.Point(31, 12);
             this.dgvUser.Name = "dgvUser";
             this.dgvUser.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUser.Size = new System.Drawing.Size(232, 323);
+            this.dgvUser.Size = new System.Drawing.Size(255, 323);
             this.dgvUser.TabIndex = 0;
             this.dgvUser.SelectionChanged += new System.EventHandler(this.dgvUser_SelectionChanged);
             // 

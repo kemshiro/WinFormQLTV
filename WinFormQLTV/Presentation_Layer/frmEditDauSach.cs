@@ -48,7 +48,6 @@ namespace WinFormQLTV.Presentation_Layer
         private void btnHuy_Click(object sender, EventArgs e)
         {
             Dispose();
-            Close();
         }
 
         private void btnHoanTat_Click(object sender, EventArgs e)

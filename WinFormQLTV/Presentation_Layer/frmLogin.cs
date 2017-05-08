@@ -33,7 +33,6 @@ namespace WinFormQLTV
             {
                 frmMainAdmin = new frmMainAdmin();
                 frmMainAdmin.ShowDialog();
-                this.Visible = false;
             }
             else
             {

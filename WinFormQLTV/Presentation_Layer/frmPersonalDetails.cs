@@ -91,9 +91,7 @@ namespace WinFormQLTV.Presentation_Layer
                 else
                 {
                     MessageBox.Show("Bạn đã hoàn tất đăng kí, bắt đầu sử dụng!", "Thông báo");
-                    frmMain = new frmMainUser();
-                    frmMain.Show();
-                    this.Close();
+                    this.Dispose();
                 }
             }
         }
@@ -101,7 +99,6 @@ namespace WinFormQLTV.Presentation_Layer
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            this.Close();
         }
     }
 }

@@ -36,6 +36,7 @@
             this.grbSachMuon = new System.Windows.Forms.GroupBox();
             this.dgvSachMuon = new System.Windows.Forms.DataGridView();
             this.tbTimKiem = new System.Windows.Forms.TextBox();
+            this.btnTraSach = new System.Windows.Forms.Button();
             this.grbKhoSach.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhoSach)).BeginInit();
             this.grbSachMuon.SuspendLayout();
@@ -66,7 +67,7 @@
             // 
             this.btnChon.BackColor = System.Drawing.Color.White;
             this.btnChon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnChon.Location = new System.Drawing.Point(105, 584);
+            this.btnChon.Location = new System.Drawing.Point(60, 584);
             this.btnChon.Name = "btnChon";
             this.btnChon.Size = new System.Drawing.Size(75, 33);
             this.btnChon.TabIndex = 2;
@@ -88,7 +89,7 @@
             // btnBoSach
             // 
             this.btnBoSach.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnBoSach.Location = new System.Drawing.Point(338, 584);
+            this.btnBoSach.Location = new System.Drawing.Point(231, 584);
             this.btnBoSach.Name = "btnBoSach";
             this.btnBoSach.Size = new System.Drawing.Size(75, 33);
             this.btnBoSach.TabIndex = 5;
@@ -123,12 +124,24 @@
             this.tbTimKiem.TabIndex = 1;
             this.tbTimKiem.Text = "Tìm Kiếm";
             // 
+            // btnTraSach
+            // 
+            this.btnTraSach.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnTraSach.Location = new System.Drawing.Point(393, 584);
+            this.btnTraSach.Name = "btnTraSach";
+            this.btnTraSach.Size = new System.Drawing.Size(75, 33);
+            this.btnTraSach.TabIndex = 6;
+            this.btnTraSach.Text = "Trả Sách";
+            this.btnTraSach.UseVisualStyleBackColor = true;
+            this.btnTraSach.Click += new System.EventHandler(this.btnTraSach_Click);
+            // 
             // frmMuonSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Firebrick;
             this.ClientSize = new System.Drawing.Size(745, 629);
+            this.Controls.Add(this.btnTraSach);
             this.Controls.Add(this.tbTimKiem);
             this.Controls.Add(this.grbSachMuon);
             this.Controls.Add(this.btnBoSach);
@@ -158,5 +171,6 @@
         private System.Windows.Forms.GroupBox grbSachMuon;
         private System.Windows.Forms.DataGridView dgvSachMuon;
         private System.Windows.Forms.TextBox tbTimKiem;
+        private System.Windows.Forms.Button btnTraSach;
     }
 }
