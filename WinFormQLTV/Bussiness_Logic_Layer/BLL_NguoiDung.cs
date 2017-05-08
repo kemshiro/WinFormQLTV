@@ -7,7 +7,7 @@ using WinFormQLTV.Data_Access_Layer;
 
 namespace WinFormQLTV.Bussiness_Logic_Layer
 {
-    class BLL_NguoiDung
+    public class BLL_NguoiDung
     {
         DAL_Sql_User user = new DAL_Sql_User();
 

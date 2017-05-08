@@ -14,6 +14,7 @@ namespace WinFormQLTV.Presentation_Layer
     {
         private string username;
         private frmMuonSach frmMuonSach;
+        private frmTraSach frmTraSach;
 
         public frmMainUser(string username)
         {
@@ -30,6 +31,12 @@ namespace WinFormQLTV.Presentation_Layer
         {
             frmMuonSach = new frmMuonSach(username);
             frmMuonSach.ShowDialog();
+        }
+
+        private void btnTraSach_Click(object sender, EventArgs e)
+        {
+            frmTraSach = new frmTraSach(username);
+            frmTraSach.ShowDialog();
         }
     }
 }

@@ -7,7 +7,7 @@ using WinFormQLTV.Data_Access_Layer;
 
 namespace WinFormQLTV.Bussiness_Logic_Layer
 {
-    class BLL_Book
+    public class BLL_Book
     {
         DAL_Sql_Book book = new DAL_Sql_Book();
 
@@ -44,6 +44,16 @@ namespace WinFormQLTV.Bussiness_Logic_Layer
         public string getISBN(string dauSachMa, string cuonSachMa)
         {
             return book.getISBN(dauSachMa, cuonSachMa);
+        }
+
+        public int getDSMa(string maISBN)
+        {
+            return getDSMa(maISBN);
+        }
+
+        public int getMaxMaCS(string dauSachMa)
+        {
+            return book.getMaxMaCS(dauSachMa);
         }
     }
 }

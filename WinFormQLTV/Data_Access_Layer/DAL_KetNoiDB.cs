@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace WinFormQLTV.Data_Access_Layer
 {
-    class DAL_KetNoiDB
+    public class DAL_KetNoiDB
     {
         SqlConnection conn;
         SqlCommand cmd;

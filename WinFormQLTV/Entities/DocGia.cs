@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WinFormQLTV.Entities
 {
-    class DocGia
+    public class DocGia
     {
         public int maDocGia { get; set; }
         public DateTime ngaySinh { get; set; }

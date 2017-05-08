@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace WinFormQLTV.Data_Access_Layer
 {
-    class DAL_Sql_Book
-    {
+    public class DAL_Sql_Book
+    { 
 
         DAL_KetNoiDB kn = new DAL_KetNoiDB();
 
@@ -26,6 +26,11 @@ namespace WinFormQLTV.Data_Access_Layer
             return (int)kn.GetValue(@"select MAX(maCuonSach) from CuonSach where dauSachMa = "+dauSachMa);
         }
 
+        public int getMaxMaCS(string dauSachMa)
+        {
+            return (int)kn.GetValue(@"select MAX(maCuonSach) from CuonSach where daDuocChoMuon = 0 and dauSachMa = " + dauSachMa);
+        }
+
         public int getMaDauSach(int maCuonSach)
         {
             return (int)kn.GetValue(@"select dauSachMa from CuonSach where CuonSach.maCuonSach = " + maCuonSach);
@@ -38,12 +43,17 @@ namespace WinFormQLTV.Data_Access_Layer
 
         public string getISBN(string dauSachMa, string cuonSachMa)
         {
-            return (string)kn.GetValue(@"select maISBN from CuonSach where dauSachMa = " + dauSachMa+" and cuonSachMa = "+cuonSachMa);
+            return (string)kn.GetValue(@"select maISBN from CuonSach where dauSachMa = " + dauSachMa+" and maCuonSach = "+cuonSachMa);
         }
 
         public int getSoLuong(string maDauSach)
         {
             return (int)kn.GetValue(@"select soLuong from DauSach where DauSach.maDauSach = " + maDauSach);
+        }
+
+        public int getDSMa(string maISBN)
+        {
+            return (int)kn.GetValue(@"select dauSachMa from CuonSach where maISBN = '"+maISBN+"'");
         }
 
     }

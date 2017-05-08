@@ -63,7 +63,9 @@
   <ItemGroup>
     <Compile Include="Bussiness_Logic_Layer\BLL_Book.cs" />
     <Compile Include="Bussiness_Logic_Layer\BLL_NguoiDung.cs" />
+    <Compile Include="Bussiness_Logic_Layer\BLL_PhieuMuon.cs" />
     <Compile Include="Data_Access_Layer\DAL_KetNoiDB.cs" />
+    <Compile Include="Data_Access_Layer\DAL_Sql_PhieuMuon.cs" />
     <Compile Include="Data_Access_Layer\DAL_Sql_Book.cs" />
     <Compile Include="Data_Access_Layer\DAL_Sql_User.cs" />
     <Compile Include="Entities\DocGia.cs" />
@@ -139,6 +141,12 @@
     <Compile Include="Presentation_Layer\frmThemDauSach.Designer.cs">
       <DependentUpon>frmThemDauSach.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation_Layer\frmTraSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation_Layer\frmTraSach.Designer.cs">
+      <DependentUpon>frmTraSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Presentation_Layer\frmChiTietDauSach.resx">
@@ -176,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation_Layer\frmThemDauSach.resx">
       <DependentUpon>frmThemDauSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation_Layer\frmTraSach.resx">
+      <DependentUpon>frmTraSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

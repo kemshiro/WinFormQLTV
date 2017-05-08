@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WinFormQLTV.Data_Access_Layer
 {
-    class DAL_Sql_User
+    public class DAL_Sql_User
     {
         DAL_KetNoiDB kn = new DAL_KetNoiDB();
 
