@@ -14,6 +14,7 @@ namespace WinFormQLTV.Presentation_Layer
     {
         private string username;
         private frmMuonSach frmMuonSach;
+        private frmLichSuMuonTra frmLichSu;
 
         public frmMainUser(string username)
         {
@@ -36,6 +37,12 @@ namespace WinFormQLTV.Presentation_Layer
         private void btnQuayLai_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        private void btnLichSu_Click(object sender, EventArgs e)
+        {
+            frmLichSu = new frmLichSuMuonTra(username);
+            frmLichSu.ShowDialog();
         }
     }
 }

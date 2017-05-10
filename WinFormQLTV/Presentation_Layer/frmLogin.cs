@@ -64,5 +64,9 @@ namespace WinFormQLTV
             frmRegister.ShowDialog();
         }
 
+        private void tbUsername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

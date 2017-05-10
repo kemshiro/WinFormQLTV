@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuanLySach));
             this.dgvListSach = new System.Windows.Forms.DataGridView();
             this.btnThemDauSach = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
@@ -159,6 +160,7 @@
             this.Controls.Add(this.tbSearch);
             this.Controls.Add(this.grbChucNang);
             this.Controls.Add(this.dgvListSach);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmQuanLySach";
             this.Text = "Quản Lý Sách";
             this.Load += new System.EventHandler(this.frnQuanLySach_Load);

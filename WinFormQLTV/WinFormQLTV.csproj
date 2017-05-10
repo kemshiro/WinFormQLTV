@@ -80,6 +80,12 @@
     <Compile Include="Presentation_Layer\frmEditDauSach.Designer.cs">
       <DependentUpon>frmEditDauSach.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation_Layer\frmLichSuMuonTra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation_Layer\frmLichSuMuonTra.Designer.cs">
+      <DependentUpon>frmLichSuMuonTra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation_Layer\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +154,9 @@
     <EmbeddedResource Include="Presentation_Layer\frmEditDauSach.resx">
       <DependentUpon>frmEditDauSach.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentation_Layer\frmLichSuMuonTra.resx">
+      <DependentUpon>frmLichSuMuonTra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation_Layer\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -211,6 +220,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Martz90-Circle-Books.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

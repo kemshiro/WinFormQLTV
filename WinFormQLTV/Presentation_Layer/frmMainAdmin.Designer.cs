@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMainAdmin));
             this.btnQuanLySach = new System.Windows.Forms.Button();
             this.btnQuanLyUser = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
@@ -71,6 +72,7 @@
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnQuanLyUser);
             this.Controls.Add(this.btnQuanLySach);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMainAdmin";
             this.Text = "Trung Tâm Quản Lý";
             this.ResumeLayout(false);

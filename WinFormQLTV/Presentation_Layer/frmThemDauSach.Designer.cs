@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmThemDauSach));
             this.tbMaDauSach1 = new System.Windows.Forms.TextBox();
             this.lblMaDauSach = new System.Windows.Forms.Label();
             this.lblTieuDe = new System.Windows.Forms.Label();
@@ -187,6 +188,7 @@
             this.Controls.Add(this.tbTieuDe);
             this.Controls.Add(this.lblTieuDe);
             this.Controls.Add(this.lblTacGia);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmThemDauSach";
             this.Text = "Thêm Mới  Đầu Sách";
             this.ResumeLayout(false);

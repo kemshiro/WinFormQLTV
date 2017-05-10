@@ -19,6 +19,7 @@ namespace WinFormQLTV.Presentation_Layer
         private BLL_NguoiDung user;
         private string maDocGia, hoTen, gioiTinh, ngaySinh, lopHoc, username;
         private int soCMND;
+        private frmLichSuMuonTra frmLichSu;
 
         public frmQuanLyNguoiDung()
         {
@@ -29,8 +30,13 @@ namespace WinFormQLTV.Presentation_Layer
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            this.Dispose();
-            this.Close();
+            Dispose();
+        }
+
+        private void btnThongTinMuon_Click(object sender, EventArgs e)
+        {
+            frmLichSu = new frmLichSuMuonTra(username);
+            frmLichSu.ShowDialog();
         }
 
         private void showData(string sqlCommand)
@@ -91,6 +97,7 @@ namespace WinFormQLTV.Presentation_Layer
             }
 
             maDocGia = dr["docGiaMa"].ToString();
+            username = dr["username"].ToString();
             hoTen = user.getTen(maDocGia);
             gioiTinh = user.getGioiTinh(maDocGia);
             lopHoc = user.getLopHoc(maDocGia);

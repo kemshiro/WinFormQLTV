@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMainUser));
             this.btnLichSu = new System.Windows.Forms.Button();
             this.btnMuonSach = new System.Windows.Forms.Button();
             this.btnQuayLai = new System.Windows.Forms.Button();
@@ -44,6 +45,7 @@
             this.btnLichSu.TabIndex = 1;
             this.btnLichSu.Text = "Lịch sử mượn trả";
             this.btnLichSu.UseVisualStyleBackColor = false;
+            this.btnLichSu.Click += new System.EventHandler(this.btnLichSu_Click);
             // 
             // btnMuonSach
             // 
@@ -80,6 +82,7 @@
             this.Controls.Add(this.btnQuayLai);
             this.Controls.Add(this.btnMuonSach);
             this.Controls.Add(this.btnLichSu);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMainUser";
             this.Text = "Quản Lý Thư Viện";
             this.ResumeLayout(false);

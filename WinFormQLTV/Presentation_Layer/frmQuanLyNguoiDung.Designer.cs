@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuanLyNguoiDung));
             this.btnThongTinMuon = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -54,6 +55,7 @@
             this.btnThongTinMuon.TabIndex = 2;
             this.btnThongTinMuon.Text = "Lịch Sử Mượn Sách";
             this.btnThongTinMuon.UseVisualStyleBackColor = false;
+            this.btnThongTinMuon.Click += new System.EventHandler(this.btnThongTinMuon_Click);
             // 
             // btnThoat
             // 
@@ -118,6 +120,7 @@
             // 
             // tbHoTen
             // 
+            this.tbHoTen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.tbHoTen.Location = new System.Drawing.Point(443, 36);
             this.tbHoTen.Name = "tbHoTen";
             this.tbHoTen.ReadOnly = true;
@@ -126,6 +129,7 @@
             // 
             // tbNgaySinh
             // 
+            this.tbNgaySinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.tbNgaySinh.Location = new System.Drawing.Point(443, 94);
             this.tbNgaySinh.Name = "tbNgaySinh";
             this.tbNgaySinh.ReadOnly = true;
@@ -134,6 +138,7 @@
             // 
             // tbGioiTinh
             // 
+            this.tbGioiTinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.tbGioiTinh.Location = new System.Drawing.Point(443, 154);
             this.tbGioiTinh.Name = "tbGioiTinh";
             this.tbGioiTinh.ReadOnly = true;
@@ -142,6 +147,7 @@
             // 
             // tbLopHoc
             // 
+            this.tbLopHoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.tbLopHoc.Location = new System.Drawing.Point(443, 211);
             this.tbLopHoc.Name = "tbLopHoc";
             this.tbLopHoc.ReadOnly = true;
@@ -150,6 +156,7 @@
             // 
             // tbSoCMND
             // 
+            this.tbSoCMND.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.tbSoCMND.Location = new System.Drawing.Point(443, 268);
             this.tbSoCMND.Name = "tbSoCMND";
             this.tbSoCMND.ReadOnly = true;
@@ -171,7 +178,7 @@
             // 
             this.dgvUser.AllowUserToAddRows = false;
             this.dgvUser.AllowUserToDeleteRows = false;
-            this.dgvUser.BackgroundColor = System.Drawing.Color.White;
+            this.dgvUser.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.dgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUser.Location = new System.Drawing.Point(31, 12);
             this.dgvUser.Name = "dgvUser";
@@ -202,6 +209,7 @@
             this.Controls.Add(this.dgvUser);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmQuanLyNguoiDung";
             this.Text = "Quản Lý Người Dùng";
             this.Load += new System.EventHandler(this.frmQuanLyNguoiDung_Load);

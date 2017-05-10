@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMuonSach));
             this.grbKhoSach = new System.Windows.Forms.GroupBox();
             this.dgvKhoSach = new System.Windows.Forms.DataGridView();
             this.btnChon = new System.Windows.Forms.Button();
@@ -149,6 +150,7 @@
             this.Controls.Add(this.btnChon);
             this.Controls.Add(this.grbKhoSach);
             this.ForeColor = System.Drawing.Color.Black;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMuonSach";
             this.Text = "Mượn Sách";
             this.Load += new System.EventHandler(this.frmMuonSach_Load);
