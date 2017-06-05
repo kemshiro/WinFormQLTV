@@ -15,7 +15,7 @@ namespace WinFormQLTV.Data_Access_Layer
         private SqlTransaction tran = null;
         public DAL_KetNoiDB()
         {
-            conn = new SqlConnection(@"server= DESKTOP-TIC8QEU\SQLEXPRESS; database = DataQLTV; trusted_connection = true;");
+            conn = new SqlConnection(@"server= KHOA-PC\SQLEXPRESS; database = DataQLTV; trusted_connection = true;");
         }
 
         /// <summary>

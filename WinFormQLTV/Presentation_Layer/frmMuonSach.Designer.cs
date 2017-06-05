@@ -33,7 +33,6 @@
             this.dgvKhoSach = new System.Windows.Forms.DataGridView();
             this.btnChon = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
-            this.btnBoSach = new System.Windows.Forms.Button();
             this.grbSachMuon = new System.Windows.Forms.GroupBox();
             this.dgvSachMuon = new System.Windows.Forms.DataGridView();
             this.tbTimKiem = new System.Windows.Forms.TextBox();
@@ -87,17 +86,6 @@
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // btnBoSach
-            // 
-            this.btnBoSach.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnBoSach.Location = new System.Drawing.Point(231, 584);
-            this.btnBoSach.Name = "btnBoSach";
-            this.btnBoSach.Size = new System.Drawing.Size(75, 33);
-            this.btnBoSach.TabIndex = 5;
-            this.btnBoSach.Text = "Bỏ Sách";
-            this.btnBoSach.UseVisualStyleBackColor = true;
-            this.btnBoSach.Click += new System.EventHandler(this.btnBoSach_Click);
-            // 
             // grbSachMuon
             // 
             this.grbSachMuon.Controls.Add(this.dgvSachMuon);
@@ -129,7 +117,7 @@
             // btnTraSach
             // 
             this.btnTraSach.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnTraSach.Location = new System.Drawing.Point(393, 584);
+            this.btnTraSach.Location = new System.Drawing.Point(326, 584);
             this.btnTraSach.Name = "btnTraSach";
             this.btnTraSach.Size = new System.Drawing.Size(75, 33);
             this.btnTraSach.TabIndex = 6;
@@ -146,7 +134,6 @@
             this.Controls.Add(this.btnTraSach);
             this.Controls.Add(this.tbTimKiem);
             this.Controls.Add(this.grbSachMuon);
-            this.Controls.Add(this.btnBoSach);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnChon);
             this.Controls.Add(this.grbKhoSach);
@@ -170,7 +157,6 @@
         private System.Windows.Forms.DataGridView dgvKhoSach;
         private System.Windows.Forms.Button btnChon;
         private System.Windows.Forms.Button btnThoat;
-        private System.Windows.Forms.Button btnBoSach;
         private System.Windows.Forms.GroupBox grbSachMuon;
         private System.Windows.Forms.DataGridView dgvSachMuon;
         private System.Windows.Forms.TextBox tbTimKiem;
