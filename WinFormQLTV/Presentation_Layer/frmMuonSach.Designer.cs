@@ -96,6 +96,7 @@
             this.btnBoSach.TabIndex = 5;
             this.btnBoSach.Text = "Bỏ Sách";
             this.btnBoSach.UseVisualStyleBackColor = true;
+            this.btnBoSach.Click += new System.EventHandler(this.btnBoSach_Click);
             // 
             // grbSachMuon
             // 

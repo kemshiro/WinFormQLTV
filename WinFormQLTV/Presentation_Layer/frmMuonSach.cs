@@ -170,6 +170,11 @@ namespace WinFormQLTV.Presentation_Layer
             }
         }
 
+        private void btnBoSach_Click(object sender, EventArgs e)
+        {
+
+        }
+
         /**********************************************PHẦN TRẢ SÁCH*************************************************************************************/
 
         private void showDataSachMuon()

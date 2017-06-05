@@ -39,6 +39,11 @@ namespace WinFormQLTV.Presentation_Layer
             frmLichSu.ShowDialog();
         }
 
+        private void dgvUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
         private void showData(string sqlCommand)
         {
             kn.Open();
