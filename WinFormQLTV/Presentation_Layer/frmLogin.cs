@@ -29,7 +29,7 @@ namespace WinFormQLTV
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if(tbUsername.Text =="linh" && tbPassword.Text == "123")
+            if(user.checkLogin1(tbUsername.Text, tbPassword.Text) ==1)
             {
                 frmMainAdmin = new frmMainAdmin();
                 frmMainAdmin.ShowDialog();

@@ -16,6 +16,11 @@ namespace WinFormQLTV.Bussiness_Logic_Layer
             return user.checkLogin(username, password);
         }
 
+        public int checkLogin1(string username, string password)
+        {
+            return user.checkLogin1(username, password);
+        }
+
         public int getMaxMaDocGia()
         {
             return user.getMaxMaDocGia();
